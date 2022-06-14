@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>X,O Game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body bgcolor="black">
+	<table>
+		<tr>
+			<td id ="cell1" onclick="play(this)"></td>
+			<td id ="cell2" onclick="play(this)"></td>
+			<td id ="cell3" class="right" onclick="play(this)"></td>
+		</tr>
+		<tr>
+			<td id ="cell4" onclick="play(this)"></td>
+			<td id ="cell5" onclick="play(this)"></td>
+			<td id ="cell6" class="right" onclick="play(this)"></td>
+		</tr>
+		<tr>
+			<td class="bottom" id ="cell7" onclick="play(this)"></td>
+			<td class="bottom" id ="cell8" onclick="play(this)"></td>
+			<td class="right bottom" id ="cell9" onclick="play(this)"></td>
+		</tr>
+	</table>
+    <br>
+    <div class="info">
+        <div class="r">
+            <div class="selected" id="p1">Player1(X)</div>
+            <div class="center" id="tie">TIE</div>
+            <div id="p2">Player2(o)</div>
+        </div>
+        <br>
+        <div class="r">
+            <div id="p1Score" class="selected">0</div>
+            <div id="tieScore" class="center">0</div>
+            <div id="p2Score">0</div>    
+        </div>
+    </div>
+	<script src="main.js"></script>
+</body>
+</html>
