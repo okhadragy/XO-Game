@@ -1,9 +1,7 @@
 table {
     border:none;
     border-collapse: collapse;
-    margin: 9rem auto 10px auto;
-    width: 42rem;
-    height: 30rem;
+    margin: 9% auto 0 auto;
     text-align: center;
     font-size: 8rem;
     font-family: sans-serif;
@@ -13,8 +11,9 @@ td {
     border: 10px solid black;
     border-bottom:10px solid white;
     border-right:10px solid white;
-    width: 14rem;
-    height: 10rem;
+    max-width: calc(100% - 40px);
+    width: 214px;
+    height: 168px;
 }
 .right{
     border-right:10px solid black;
@@ -23,6 +22,7 @@ td {
     border-bottom:10px solid black;
 }
 .r{
+    max-width: calc(100% - 20px);
     display: flex;
     font-size: 1.5rem;
     font-family: sans-serif;
